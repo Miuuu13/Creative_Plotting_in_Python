@@ -1,6 +1,3 @@
-""" Tone onset as lines """
-
-
 # %% Imports 
 
 import h5py
@@ -9,6 +6,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 from datetime import datetime # for time stamp
+
+
+""" 
+    Tone onset as lines 
+    uses the checkpoints +/- 10 sec before and after tone 
+"""
 
 # %% Functions to save/load .h5 as dictionary 
 """ saving and loading of .h5 (laod is as df)"""
